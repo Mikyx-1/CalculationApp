@@ -1,0 +1,91 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: lightskyblue;
+    text-align: center;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display1{
+    font-size: 100px;
+}
+
+#middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#settings-container{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #f1f1f1;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.operationButtons:hover {
+    background-color: #fff;
+}
+
+.operationButtons{
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 1vh;
+    width:40px;
+    height: 40px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+
+#opSetting {
+    display: block;
+    margin-bottom: 1vh;
+    margin-left: 160px;
+    transform: translate(-50%, 0%);
+}
+
+
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.difficultyButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+}
+
+.difficultyButton:hover{
+    background-color: #fff;
+}
+
+#difficulty {
+    display: block;
+    margin-bottom: 1vh;
+    margin-left: 160px;
+    transform: translate(-50%, 0%);
+}
+

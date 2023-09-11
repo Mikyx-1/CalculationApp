@@ -1,0 +1,4 @@
+Front-End: 80% complete with ugly interface
+Back-End: 0% complete
+
+What's next? More funny interface & Backend.
