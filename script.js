@@ -14,14 +14,34 @@ function replaceItemInAString(string)
 }
 
 
-function chooseRandomOperation(numOperations = ["+", "-", "x", "÷"]){
+function chooseRandomOperator(numOperations = ["+", "-", "x", "÷"]){
 
     let randomOption = parseInt(Math.random()*numOperations.length);
     return numOperations[randomOption];
-
 }
 
 
+inputResult.addEventListener("keydown", function(event){
+    if(event.key == "Enter")
+    {
+        checkResult();
+    }
+})
 
+function checkResult()
+{
+    let userAnswer = eval(inputResult.value)
+    let Answer = parseInt(eval(replaceItemInAString(displayNumber.innerText)));
+    if (userAnswer == Answer){
+        nextQuestion();
+    }
+}
 
-console.log(chooseRandomOperation(["+"]));
+function nextQuestion(){
+    let num1 = parseInt(Math.random()*30);
+    let num2 = Math.max(1, parseInt(Math.random()*30));
+    let operator = chooseRandomOperator();
+    displayNumber.innerText = num1.toString() + " " + operator + " " + num2.toString();
+    inputResult.value = "";
+}
+

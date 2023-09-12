@@ -13,10 +13,10 @@
     <div id="settings-container">
         <div class="settings-content">
             <label id="opSetting" class="settings-content">Operation Settings</label>
-            <button id="button1" class="operationButtons">1</button>
-            <button id="button2" class="operationButtons">2</button>
-            <button id="button3" class="operationButtons">3</button>
-            <button id="button4" class="operationButtons">4</button>
+            <button id="button1" class="operationButtons">+</button>
+            <button id="button2" class="operationButtons">-</button>
+            <button id="button3" class="operationButtons">x</button>
+            <button id="button4" class="operationButtons">÷</button>
         </div>
 
         <div class="difficultyLevel">
@@ -35,11 +35,11 @@
 
     <div id="middle">
         <div class="display">
-            <label id="display1" class="display">179 x 16</label>
+            <label id="display1" class="display">7 + 3</label>
         </div>
     
         <div class="input">
-            <input id="input1" class="input" placeholder="Result">
+            <input id="input1" class="input" placeholder="Result" oninput="this.value = this.value.replace(/[^0-9-]/g, '')">
             <button id="enterBtn" class="input">Enter</button>
         </div>
     </div>
